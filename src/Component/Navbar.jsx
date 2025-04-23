@@ -9,7 +9,7 @@ function Navbar() {
       <div className="w-auto h-[100%] flex justify-center items-center gap-2  ">
         <i className="fa-solid fa-bars text-gray-800 dark:text-gray-300 text-[1.9rem] cursor-pointer p-2  "></i>
         <div className="flex items-center gap-1 text-black dark:text-white">
-          <span className="text-5xl md:text-5xl font-extrabold tracking-tight text-[#e50914] dark:text-[#ff4c4c]">
+          <span className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#e50914] dark:text-[#ff4c4c]">
             M
           </span>
           <div className="leading-none flex flex-col justify-center">
