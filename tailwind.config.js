@@ -1,5 +1,6 @@
+const withMT = require("@material-tailwind/react/utils/withMT");
 // tailwind.config.js
-module.exports = {
+module.exports = withMT({
   darkMode: 'class', // Enables manual class-based dark mode
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
@@ -11,5 +12,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-};
+  plugins: []
+});
