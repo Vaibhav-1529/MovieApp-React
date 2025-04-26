@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar';
 import LeftSec from './LeftSec';
+import RIghtSec from './RIghtSec';
 function Movie() {
     const root = window.document.documentElement;
     root.classList.add('dark');
@@ -11,7 +12,9 @@ function Movie() {
             <div className='w-[100%] sm:w-[970px] max-w-[1023px] h-auto bg-[#D7D3BF]	dark:bg-[#1a1a1a]'>
                 <LeftSec/>
             </div>
-            <div className='w-[100%] sm:w-[330px] max-w-[1023px] h-[400px]  bg-[#D7D3BF]	dark:bg-[#1a1a1a]'></div>
+            <div className='w-[100%] sm:w-[330px] max-w-[1023px] h-auto  bg-[#D7D3BF]	dark:bg-[#1a1a1a]'>
+                <RIghtSec/>
+            </div>
         </div>
     </div>
     );
