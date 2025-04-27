@@ -6,13 +6,11 @@ function Pagination(props) {
  
   const next = () => {
     if (props.active === props.totalPages) return;
- 
     props.setActive(props.active + 1);
   };
  
   const prev = () => {
-    if (props.active === 1) return;
- 
+    if (props.active ==0) return;
     props.setActive(props.active - 1);
   };
  
@@ -28,7 +26,7 @@ function Pagination(props) {
         <ArrowLeftIcon strokeWidth={2} className="h-4 w-4" />
       </IconButton>
       <Typography color="white" className="font-normal">
-        Page <strong className="text-white-900">{props.active?props.active:0}</strong> of{" "}
+        Page <strong className="text-white-900">{props.active}</strong> of{" "}
         <strong className="text-white-900">{props.totalPages?props.totalPages:0}</strong>
       </Typography>
       <IconButton

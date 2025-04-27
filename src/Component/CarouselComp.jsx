@@ -3,7 +3,7 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
 
 function CarouselComp() {
   return (
-    <Carousel className="rounded-xl h-full w-full sm:h-[400px] sm:w-[970px] overflow-hidden">
+    <Carousel className="rounded-xl h-full w-full sm:h-[400px] sm:w-full overflow-hidden">
       <div className="relative h-full w-full">
         <img
           src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"

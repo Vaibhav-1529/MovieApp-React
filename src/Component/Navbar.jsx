@@ -17,7 +17,11 @@ function Navbar(props) {
       <div className="w-[100%] h-[100%]  flex justify-between items-center ">
         <div className="w-auto h-[100%] flex justify-center items-center gap-2  ">
           <i className="fa-solid fa-bars text-gray-800 dark:text-gray-300 text-[1.9rem] cursor-pointer p-2  "></i>
-          <div className="flex justify-center items-center gap-1 text-black dark:text-white">
+          <div 
+          onClick={()=>{
+            location.reload();
+          }}
+          className="flex justify-center items-center gap-1 text-black dark:text-white">
             <span className="text-5xl md:text-5xl font-extrabold tracking-tight text-[#e50914] dark:text-[#ff4c4c]">
               M
             </span>
@@ -38,6 +42,7 @@ function Navbar(props) {
               type="text"
               value={value}
               onChange={(e) => setvalue(e.target.value)}
+              onKeyDown={(e)=>{if(e.key==='Enter')handlesearh();}}
               className="h-[2.5rem] pr-[60px] pl-[30px] font-medium rounded-l-2xl border-none bg-gray-100	dark:bg-[#1e1e1e] text-[1.2rem] focus:outline-none focus:border-transparent "
               placeholder="Enter anime name"
             />
@@ -71,14 +76,15 @@ function Navbar(props) {
         </div>
       </div>
       {issearchbar && (
-        <div className="w-full h-full flex justify-between items-center ">
-          <form action="" className="relative block">
+        <div className="w-full h-full flex justify-between items-center sm:hidden">
+          <form action="" className="relative flex justify-center items-center">
             <input
               type="text"
               className="h-[2.5rem] pr-[60px] pl-[30px] w-[290px] font-medium rounded-l-2xl border-none bg-gray-100	dark:bg-[#1e1e1e] text-[1.2rem] focus:outline-none focus:border-transparent "
               placeholder="Enter anime name"
               value={value}
               onChange={(e) => setvalue(e.target.value)}
+              onKeyDown={(e)=>{if(e.key==='Enter')handlesearh();}}
             />
             <button
             type="button"
