@@ -21,6 +21,7 @@ function RIghtSec() {
       </button>
       <h2 className="text-xl sm:text-2xl text-white ">Spring Season 2025</h2>
     </div>
+    
   );
 }
 
